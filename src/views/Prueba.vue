@@ -1,18 +1,18 @@
 <template>
-  <ion-card>
-      <ion-item>
-          <ion-label position="floating">Primer nombre</ion-label>
-          <ion-input :value="greeting" @input=" greeting = $event.target.value"></ion-input>
-      </ion-item>
-      <ion-button color="primary" expand="full" @click="handleClick">Enviar</ion-button>
-  </ion-card>
+    <ion-card>
+        <ion-item>
+            <ion-label position="floating">Primer nombre</ion-label>
+            <ion-input :value="greeting" @input=" greeting = $event.target.value"></ion-input>
+        </ion-item>
+        <ion-button color="primary" expand="full" @click="handleClick">Enviar</ion-button>
+    </ion-card>
 </template>
 
 <script>
 export default {
     data() {
         return {
-            greeting: ''      
+            greeting: ''
         }
     },
     methods:{

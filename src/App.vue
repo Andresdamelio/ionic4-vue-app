@@ -1,8 +1,8 @@
 <template>
   <ion-app id="app">
-    <ion-toolbar color="danger">
+    <ion-toolbar color="primary">
       <ion-buttons>
-        <ion-button>
+        <ion-button slot="secondary">
           <ion-icon name="logo-reddit"></ion-icon>
         </ion-button>
       </ion-buttons>
@@ -10,7 +10,7 @@
         Reddit Sport
       </ion-title>
     </ion-toolbar>
-    <ion-content>
+    <ion-content color="light">
       <router-view/>
     </ion-content>
   </ion-app>
