@@ -1,5 +1,6 @@
 <template>
-  <ion-app id="app">
+<div id="app">
+  <ion-app>
     <ion-toolbar color="primary">
       <ion-buttons>
         <ion-button slot="secondary">
@@ -14,4 +15,5 @@
       <router-view/>
     </ion-content>
   </ion-app>
+</div>
 </template>
