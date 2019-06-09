@@ -21,7 +21,8 @@ export default new Router({
     {
       path: '/detail',
       name: 'detail',
-      component: () => import('./views/Detail.vue')
+      component: () => import('./views/Detail.vue'),
+      props: true
     }
   ]
 })

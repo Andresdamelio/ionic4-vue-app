@@ -12,7 +12,7 @@
                     <img :src="post.data.thumbnail" alt="">
                 </template>
             </ion-card-content>
-            <ion-button color="primary" expand="full" @click="viewMore">
+            <ion-button color="primary" expand="full" @click="viewMore(post.data)">
                 View more
             </ion-button>
         </ion-card>
@@ -33,11 +33,10 @@ export default {
         async loadPost(){
             const response = await axios.get('https://www.reddit.com/r/sports.json');
             this.posts = response.data.data.children;
-            console.log(this.posts);
         },
 
-        viewMore(){
-            alert('hola parroquia')
+        viewMore(post){
+            this.$router.push({name: 'detail', params:{ post }})
         }
     },
 
